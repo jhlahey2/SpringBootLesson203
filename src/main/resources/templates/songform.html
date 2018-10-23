@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>songform</title>
+</head>
+<body>
+    <form action="#" th:action="@{/songform}" th:object="${song}" method="post">
+        Name:   <input type="text" th:field="*{name}" /><br /><br />
+        Artist: <input type="text" th:field="*{artist}" /><br /><br />
+        Album:  <input type="text" th:field="*{album}" /><br /><br />
+        Rating: <input type="number" th:field="*{rating}" /><br /><br />
+        Year:   <input type="number" th:field="*{year}" />
+        <input type="submit" value="Click Me" />
+    </form>
+</body>
+</html>
